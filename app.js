@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 3000
+const port = process.env.PORT
 
 app.get('/', (req, res) => {
   res.send('¡Hola! Esta es mi primera imagen propia en Docker 🐳')
